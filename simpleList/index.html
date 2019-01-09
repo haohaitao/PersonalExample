@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="inputValue"/>
+        <button v-on:click="btnClick">提交</button>
+        <ul>
+            <!--<li v-for="item in List">-->
+                <!--{{item}}-->
+            <!--</li>-->
+            <todo-item v-bind:content="item" v-for="item in List"></todo-item>
+        </ul>
+    </div>
+
+<script>
+    /**MVVM设计模式
+     * Model-View-View-Model的简写
+     * */
+
+//    Vue.component("TodoItem",{  //全局注册
+//        props:['content'],
+//        template:"<li>{{content}}</li>"
+//    })
+
+        var TodoItem = {  //局部注册
+        props:['content'],
+        template:"<li>{{content}}</li>"
+    }
+    var app = new Vue({
+        el:'#app',
+        components:{
+            TodoItem:TodoItem
+        },
+        data: {
+            List: [],
+            inputValue: ''
+        },
+        methods: {
+            btnClick: function () {
+                this.List.push(this.inputValue)
+                this.inputValue = ''
+            }
+        }
+    })
+</script>
+</body>
+</html>

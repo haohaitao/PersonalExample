@@ -16,3 +16,4 @@
     npm run dev    运行
     npm run build  打包
     http://localhost:8080
+    
