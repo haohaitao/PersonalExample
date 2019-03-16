@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不使用appear</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="root">
+    <h3>进入页面初始没有过渡效果</h3>
+    <button @click="handleClick">点我</button>
+    <transition
+            name="fade"
+            enter-active-class="animated slideInUp"
+            leave-active-class="animated rollOut"
+    >
+        <p v-show="see">hello world!</p>
+    </transition>
+</div>
+
+<script>
+
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            see: true
+        },
+        methods: {
+            handleClick: function () {
+                this.see = !this.see
+            }
+        }
+    })
+</script>
+</body>
+</html>
