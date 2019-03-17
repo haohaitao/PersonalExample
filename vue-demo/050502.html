@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中多个元素或组件的过渡</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+    <style>
+        .v-enter, .v-leave-to {
+            opacity: 0;
+        }
+        .v-enter-active, .v-leave-active {
+            transition: opacity 1s;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <transition mode="out-in">
+        <button :key="change" @click="change=!change">
+            {{change ? 'hello' : 'world'}}
+        </button>
+    </transition>
+</div>
+
+<script>
+
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            change: 'hello'
+        }
+    })
+</script>
+</body>
+</html>
