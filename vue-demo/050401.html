@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的JS动画钩子</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <button @click="handleClick">点我</button>
+    <transition
+            @before-enter="beforeEnter"
+            @enter="enter"
+            @after-leave="afterLeave"
+            @after-enter="afterEnter"
+            @before-leave="beforeLeave"
+            @leave="leave"
+    >
+        <div v-show="see">hello world!</div>
+    </transition>
+</div>
+
+<script>
+
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            see: true
+        },
+        methods: {
+            handleClick: function () {
+                this.see = !this.see
+            },
+            beforeEnter: function (el) {
+                el.style.color='red'
+            },
+            enter: function (el,done) {
+                setTimeout(() => {
+                    el.style.color = 'blue'
+                done()
+            },2000)
+            },
+            afterEnter: function (el) {
+                setTimeout( () => {
+                    el.style.color = 'yellow'
+            },4000)
+            },
+            afterLeave: function () {
+                console.log('离开完成')
+            },
+            beforeLeave: function (el) {
+                console.log('触发离开')
+            },
+            leave: function () {
+                console.log('离开中')
+            }
+        }
+    })
+</script>
+</body>
+</html>
