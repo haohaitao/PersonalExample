@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中使用velocity.js库</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+</head>
+<body>
+<div id="root">
+    <button @click="handleClick">点我</button>
+    <transition
+            v-on:before-enter="beforeEnter"
+            v-on:enter="enter"
+            v-on:after-enter="afterEnter"
+            v-on:before-leave="beforeLeave"
+            v-on:leave="leave"
+            v-on:after-leave="afterLeave"
+            v-bind:css="false"
+    >
+        <div v-show="see">hello world!</div>
+    </transition>
+</div>
+
+<script>
+
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            see: true
+        },
+        methods: {
+            handleClick: function () {
+                this.see = !this.see
+            },
+            beforeEnter: function (el) {
+                console.log('进场动画开始!')
+                el.style.opacity = 0
+            },
+            enter: function (el,done) {
+                Velocity(el, { opacity: 1, duration: 3000})
+                Velocity(el, { rotateX: '100deg' }, { loop: 2 ,complete: done })
+            },
+            afterEnter: function (el) {
+                console.log("进场动画结束!")
+            },
+            beforeLeave: function (el) {
+                console.log('离场动画开始!')
+                el.style.opacity = 0
+            },
+            leave: function (el,done) {
+                Velocity(el, { opacity: 1, duration: 3000})
+                Velocity(el, { rotateZ: '-15deg'}, { loop: 2 ,complete: done })
+            },
+            afterLeave: function () {
+                console.log('离场动画结束!')
+            }
+        }
+    })
+</script>
+</body>
+</html>
