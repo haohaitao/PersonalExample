@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的列表过渡</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+
+    <style>
+        .v-enter, .v-leave-to{
+            opacity:0;
+        }
+        .v-enter-active, .v-leave-active{
+            transition: opacity 3s;
+        }
+        .v-move {
+            transition: transform 1s;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <button @click="add">add</button>
+    <button @click="remove">remove</button>
+    <button @click="shuffle">shuffle</button>
+    <transition-group tag="ul">
+        <p v-for="item in list" :key="item.id">{{item.id}} -- {{item.name}}</p>
+    </transition-group>
+</div>
+
+<script>
+    var count = 1;
+    var num = 1;
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            list: []
+        },
+        methods: {
+            add: function () {
+                this.list.push({
+                    id:count++,
+                    name:'我是第' + num++ +'行！'
+                })
+            },
+            remove: function () {
+                this.list.splice(0,1)
+            },
+            shuffle: function () {
+                this.list = _.shuffle(this.list)
+            }
+        }
+    })
+</script>
+</body>
+</html>
