@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prinmeNumber</title>
+</head>
+<body>
+    <script>
+        function prinmeNumber() {
+            for (var i=2; i<100; i++){
+                var number = 1;
+                for (var y=2; y<i; y++){
+                    if(i%y==0){
+                        number = 0;
+                    }
+                }
+                if(number){
+                    console.log(i)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
