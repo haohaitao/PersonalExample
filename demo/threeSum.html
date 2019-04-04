@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nums = [-1, 0, 1, 2, -1, -4];
+        var temp = [];
+        function threeSum(nums) {
+            for (var a = 0; a < 6; a++) {
+                for (var b = 1; b < 6; b++) {
+                    for (var c = 2; c < 6; c++) {
+                        if((nums[a]+nums[b]+nums[c]===0)&&(temp.indexOf(nums[a]&&nums[b]&&nums[c]==-1))){
+                            temp.push(nums[a]&&nums[b]&&nums[c])
+                            console.log(temp)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+2 1 0
+3 2 1
+4 3 2
