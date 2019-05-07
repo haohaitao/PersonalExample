@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b49de31e-b2f0-408b-9794-e4f14f931176" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index-计算属性方法和监听器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index1-vue生命周期函数.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index2-计算属性的get和set.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index3-样式绑定.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index4-条件渲染.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index5-列表渲染.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index6-实现todolist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index1-父子组件传值.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index2-组件参数校验.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index3-js原生事件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index4-非父子组件传值.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index5-Vue插槽和具名插槽.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index6-作用域插槽.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="PersonalExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,20 +40,36 @@
       <file leaf-file-name="050601.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-demo/050601.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threeSum.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="threeSum.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/threeSum.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.62124246">
+                <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -136,7 +140,6 @@
       <list>
         <option value="$PROJECT_DIR$/card.php" />
         <option value="$PROJECT_DIR$/simpleList/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/vue-demo/05003.html" />
         <option value="$PROJECT_DIR$/vue-demo/0503.html" />
         <option value="$PROJECT_DIR$/vue-demo/050302.html" />
@@ -149,6 +152,7 @@
         <option value="$PROJECT_DIR$/vue-demo/050503.html" />
         <option value="$PROJECT_DIR$/vue-demo/050601.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -188,8 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,6 +226,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,14 +381,20 @@
       <option name="project" value="LOCAL" />
       <updated>1554368084040</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="复盘计划">
+      <created>1557229796486</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1557229796486</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -426,7 +436,8 @@
     <MESSAGE value="update index" />
     <MESSAGE value="update vue-demo" />
     <MESSAGE value="es6MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="es6MD" />
+    <MESSAGE value="复盘计划" />
+    <option name="LAST_COMMIT_MESSAGE" value="复盘计划" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -739,19 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-demo/050301.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -815,7 +813,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -829,7 +827,6 @@
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -843,7 +840,6 @@
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="-1.6363636">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -857,7 +853,6 @@
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -868,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-demo/050601.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
@@ -878,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7613637">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,6 +882,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.62124246">
+            <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
