@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>index2-计算属性的get和set</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{sum}}
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            start: '1',
+            end: '2'
+        },
+        computed: {
+            sum: {
+                get: function () {
+                    console.log('重新计算拉！')
+                    return this.sum = this.start + this.end;
+                },
+                set: function (value) {
+                    var arr = value.split('');
+                    this.start = arr[0];
+                    this.end = arr[1];
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

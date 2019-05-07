@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue组件绑定原生事件</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child @click.native="btnClick"></child>
+</div>
+
+<script>
+    var child = {
+        template: '<div>我是child组件，用来实现js原生点击事件！</div>'
+    }
+
+    var vm = new Vue({
+        el: '#app',
+        components: {
+            child: child
+        },
+        methods: {
+            btnClick: function () {
+                alert('我是原生事件！')
+            }
+        }
+    })
+</script>
+</body>
+</html>

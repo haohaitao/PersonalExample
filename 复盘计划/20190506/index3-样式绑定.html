@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index3-样式绑定</title>
+    <script src="../../vue.js"></script>
+    <style>
+        .test {
+            color:red;
+        }
+        .sheet {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <hi></hi>
+</div>
+
+<script>
+    Vue.component('hi',{
+        data: function () {
+            return {
+                show:true,
+                define:true
+            }
+        },
+        template: '<div :class="{test:show,sheet:define}" @click="btnClick">Hello world!</div>',
+        methods: {
+            btnClick: function () {
+                this.show = !this.show;
+            }
+        }
+    })
+
+    var vm = new  Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>

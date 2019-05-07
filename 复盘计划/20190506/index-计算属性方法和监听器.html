@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div>{{sum}}</div>
+    <div>{{wuguan}}</div>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            start: 1,
+            end: 2,
+            sum:3,
+            wuguan: '这是无关属性！'
+        },
+        /**
+         * 计算属性会缓存数据，缓存的依据是所以来的属性值是否发生改变
+         * 这里是 start和end
+         */
+//        computed: {
+//            sum: function () {
+//                console.log('看到这段话说明调用了计算属性computed!')
+//                return this.start + this.end;
+//            }
+//        }
+        /**
+         * 很明显使用methods来计算不合适，不管页面哪个属性发生改变都会调用
+         */
+//        methods: {
+//            sum: function () {
+//                console.log('看到这段话说明调用了sum函数!')
+//                return this.start + this.end;
+//            }
+//        }
+        /**
+         * 通过对比，我们可以很明显的发现watch的方法比computed方法对了很多步骤
+         * 显得较麻烦
+         */
+        watch: {
+            start: function (val){
+                console.log(val+ ':start')
+                this.sum = this.start + val;
+            },
+            end: function (val){
+                console.log(val+ ':end')
+                this.sum = val + this.end;
+            }
+        }
+    })
+</script>
+</body>
+</html>

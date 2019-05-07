@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue父子组件传值</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child content="我是父组件内容"></child>
+</div>
+
+<script>
+    //定义一个叫child的子组件
+    var child = {
+        //props接收父组件传的content，并限制content的数据类型为string
+        props: {
+            content: String
+        },
+        template: '<div>我是child子组件！{{content}}</div>'
+    }
+    //定义的子组件需要在实例中声明
+    var vm = new Vue({
+        el: '#app',
+        components: {
+            child: child
+        }
+    })
+</script>
+</body>
+</html>

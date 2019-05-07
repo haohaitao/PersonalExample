@@ -2,30 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b49de31e-b2f0-408b-9794-e4f14f931176" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/sum.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/threeSum.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/00 严格模式.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/01 let命令.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/02 变量的解构赋值.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/03 字符串扩展.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/04 数值的扩展.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/05 函数的扩展.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/06 数组的扩展.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/07 对象的扩展.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/08 Symbol.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/09 Set 和 Map 数据结构.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/10 Proxy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/11 Reflect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/12 Promise.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/13 Iterator.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/14 Generator.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/15 async 函数.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/16 Class.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/17 Module.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/Babel help.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6MD/Webpack.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index-计算属性方法和监听器.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index1-vue生命周期函数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index2-计算属性的get和set.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index3-样式绑定.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index4-条件渲染.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index5-列表渲染.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190506/index6-实现todolist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index1-父子组件传值.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index2-组件参数校验.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index3-js原生事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index4-非父子组件传值.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index5-Vue插槽和具名插槽.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/复盘计划/20190507/index6-作用域插槽.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/primeNumber.html" afterPath="$PROJECT_DIR$/demo/primeNumber.html" />
     </list>
     <ignored path="PersonalExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +39,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-21.0">
               <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,42 +52,20 @@
       <file leaf-file-name="050601.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-demo/050601.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
+            <state vertical-scroll-proportion="-0.75">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="00 严格模式.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/es6MD/00 严格模式.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="threeSum.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/threeSum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01 let命令.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/es6MD/01 let命令.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -126,16 +94,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todolist/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -230,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,10 +208,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PersonalExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PersonalExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="复盘计划" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,19 +371,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552901048646</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="es6MD">
+      <created>1554368084040</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1554368084040</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -447,50 +425,18 @@
     <MESSAGE value="add 050402 page" />
     <MESSAGE value="update index" />
     <MESSAGE value="update vue-demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="update vue-demo" />
+    <MESSAGE value="es6MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="es6MD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-demo/050302.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-demo/050301.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-21.0">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -885,12 +824,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-demo/050601.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/es6MD/01 let命令.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6MD/14 Generator.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="-1.6363636">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/es6MD/00 严格模式.md">
@@ -907,18 +866,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/es6MD/01 let命令.md">
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/vue-demo/050601.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/复盘计划/20190506/index1-vue生命周期函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7613637">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/threeSum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="inputValue">
+    <button @click="btnClick">提交</button>
+    <ul>
+        <todo-item
+                v-bind:index="index"
+                v-bind:content="item"
+                v-for="(item,index) in List"
+                @change="deleteBtnClick"
+        ></todo-item>
+    </ul>
+</div>
+
+<script>
+    //局部组件var TodoItem = {}
+    var TodoItem = {
+        props: ['content','index'],  //接收content和index
+        template: '<li @click="deleteBtn">{{content}} -- index:{{index}}</li>',
+        methods: {
+            deleteBtn: function () {
+                this.$emit('change',this.index);
+            }
+        }
+    }
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            List: [],
+            inputValue: ''
+        },
+        components: {
+            TodoItem: TodoItem
+        },
+        methods: {
+            btnClick: function () {
+                this.List.push(this.inputValue);
+                this.inputValue='';
+            },
+            deleteBtnClick: function (index) {
+                this.List.splice(index,1);
+            }
+        },
+        //生命周期函数是在某一个时间点自动执行的函数，直接卸载vue实例当中
+        //页面创建完成前触发（初始化事件和生命周期）
+        beforeCreate: function () {
+            console.log('beforeCreate')
+        },
+        //页面创建完成后触发（初始化数据绑定的内容）
+        created: function () {
+            console.log('created')
+        },
+        //页面挂载完成前beforeMounted触发
+        beforeMount: function () {
+            console.log('mounted准备！')
+        },
+        //页面挂载完成后mounted触发
+        mounted: function () {
+            console.log('mounted完毕！')
+        },
+        //执行destroyed()之前，beforeDestroy会触发
+        beforeDestroy: function () {
+            console.log('beforeDestroy准备！')
+        },
+        //执行destroyed()完成后触发
+        destroyed: function () {
+            console.log('destroyed执行完毕！')
+        },
+        //updated是内容更新完毕会触发
+        updated: function () {
+            console.log('updated我更新完毕！')
+        },
+        //beforeUpdate是内容在更新之前会触发
+        beforeUpdate: function () {
+            console.log('beforeUpdate我准备更新！')
+        }
+    })
+</script>
+</body>
+</html>

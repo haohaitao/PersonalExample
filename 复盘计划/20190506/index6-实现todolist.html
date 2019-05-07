@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" placeholder="在这里输入内容"  v-model="inputValue">
+    <button @click="btnClick">提交</button>
+    /**
+    *1、输入框输入内容，提交后将内容push进List数组
+    *2、组件循环数组的内容，将item和index的值传给子组件 TodoItem
+    *3、点击子组件 TodoItem 通过$emit触发change事件，父组件监听执行删除方法，通过数组的变异方法 splice 删除下标为index的一个元素
+    */
+    <ul>
+        <todo-item :item="item"
+                   :index="index"
+                   v-for="(item,index) of List"
+                   @change="btnDeleteClick"
+        ></todo-item>
+    </ul>
+</div>
+
+<script>
+    Vue.component('TodoItem',{
+        props: ['item','index'],
+        template: '<li @click="deleteClick">{{item}}</li>',
+        methods: {
+            deleteClick: function () {
+                this.$emit('change',this.index)
+            }
+        }
+    })
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            inputValue: '',
+            List:[]
+        },
+        methods: {
+            btnClick: function () {
+                this.List.push(this.inputValue);
+                this.inputValue = ''
+            },
+            btnDeleteClick: function (index) {
+                this.List.splice(index,1)
+            }
+        }
+    })
+</script>
+</body>
+</html>

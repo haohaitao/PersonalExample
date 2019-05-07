@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue插槽和具名插槽</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child>
+        <h1 slot="header">我是一级，hello world!</h1>
+        <h3 slot="footer">我是三级，hello world！</h3>
+        <h2 slot="content">我是二级，hello world！</h2>
+    </child>
+</div>
+
+<script>
+    //具名插槽就是1、在组件写上slot属性，值为插槽名字
+    //2、然后在模板里面写上一个插槽的name属性，值为组件中slot的值
+    Vue.component('child',{
+        template: `<div>
+                    <slot name="header">这是默认</slot>
+                    <slot name="content">这是默认</slot>
+                    <slot name="footer">这是默认</slot>
+                    </div>`
+    })
+
+    var vm = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>

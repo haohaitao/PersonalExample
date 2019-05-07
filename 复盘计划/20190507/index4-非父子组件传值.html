@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue中非父子组件传值</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child-a :number="0" ></child-a>
+    <child-b :number="0" ></child-b>
+</div>
+
+<script>
+
+    Vue.prototype.bus = new Vue()
+
+    Vue.component('childA',{
+        props: {
+            number: Number
+        },
+        data: function () {
+            return {
+                numberA: this.number
+            }
+        },
+        template: '<button @click="btnClickA">我是childA组件！: {{numberA}}</button>',
+        methods: {
+            btnClickA: function () {
+                console.log(this.number)
+                this.bus.$emit('changeA',this.numberA)
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            this.bus.$on('changeB', function (numberB) {
+                _this.numberA += 1
+            })
+        }
+    })
+
+
+    Vue.component('childB',{
+        props: {
+            number: Number
+        },
+        data: function () {
+            return {
+                numberB: this.number
+            }
+        },
+        template: '<button @click="btnClickB">我是childB组件！: {{numberB}}</button>',
+        methods: {
+            btnClickB: function () {
+                console.log(this.number)
+                this.bus.$emit('changeB',this.numberB)
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            this.bus.$on('changeA',function (numberA) {
+                _this.numberB += 1
+            })
+        }
+    })
+
+    var vm = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>

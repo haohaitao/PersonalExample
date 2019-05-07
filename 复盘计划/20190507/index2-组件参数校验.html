@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件参数校验</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child :content="123"></child>
+</div>
+
+<script>
+    //Vue.component('child',{})  定义全局组件child
+    Vue.component('child',{
+        props: {
+            content: Number
+        },
+        template: '<div>我是组件child！<br/>{{content}}</div>'
+    })
+
+    var vm = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>

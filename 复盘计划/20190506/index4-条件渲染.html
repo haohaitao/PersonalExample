@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div v-if="show" @click="btnClick">我是v-if</div>
+    <div v-else>我的v-if被隐藏了，我就会出现！</div>
+    <div v-show="show" @click="btnClick">我是v-show</div>
+    <div @click="btnClick">
+        我们的区别在于是否重新渲染dom节点！
+    </div>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            show:true
+        },
+        methods : {
+            btnClick: function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</body>
+</html>
