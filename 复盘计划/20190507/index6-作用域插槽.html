@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>作用域插槽</title>
+    <script src="../../vue.js"></script>
 </head>
 <body>
+<div id="app">
+    <child>
+        <template slot-scope="content">
+            {{content.item}}
+        </template>
+    </child>
+</div>
 
+<script>
+    //定义全局组件child，data定义一个数组，slot插槽循环数组，传number值到slot-scope，然后渲染
+    Vue.component('child',{
+        data: function () {
+            return {
+                List:[1,2,3,4,5]
+            }
+        },
+        template: '<div><slot v-for="item of List" :number="item"></slot></div>'
+    })
+
+    var vm = new Vue({
+        el: '#app'
+    })
+</script>
 </body>
 </html>
