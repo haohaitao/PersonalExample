@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件和v-once指令</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <component :is="type"></component>
+    <button @click="btnClick">点我切换</button>
+</div>
+
+<script>
+    Vue.component('childA',{
+        template: '<div v-once>我是childA</div>'
+    })
+
+    Vue.component('childB',{
+        template: '<div v-once>我是childB</div>'
+    })
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            type: 'childA'
+        },
+        methods: {
+            btnClick: function () {
+                this.type= this.type === 'child-a' ? 'child-b' : 'child-a'
+            }
+        }
+    })
+</script>
+</body>
+</html>
