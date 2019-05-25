@@ -11,7 +11,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/syd': {
-        target: 'https://jx-api.sanyeda.com',  // 接口域名
+        target: '**************',  // 接口域名,这里填写接口的域名
         changeOrigin: true,  //是否跨域
         pathRewrite: {
             '^/syd': ''   //需要rewrite重写的,
