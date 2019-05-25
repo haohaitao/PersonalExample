@@ -13,7 +13,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.prototype.$axios = axios //将axios挂载在Vue实例原型上
 
 // 设置axios请求的token
-axios.defaults.headers.common['token'] = '******************'
+axios.defaults.headers.common['token'] = '*********************'
+//设置请求头
+axios.defaults.headers.post["Content-type"] = "application/json"
 
 Vue.use(iView) 
 Vue.use(ElementUI) 

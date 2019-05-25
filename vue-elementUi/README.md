@@ -2,9 +2,6 @@
 
 > 一个很厉害的项目
 
-## 效果图
-![运行效果](src/assets/gifTest.gif)
-
 ## Build Setup
 
 ``` bash

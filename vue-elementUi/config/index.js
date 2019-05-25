@@ -10,13 +10,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/syd': {
-        target: '**************',  // 接口域名,这里填写接口的域名
-        changeOrigin: true,  //是否跨域
-        pathRewrite: {
-            '^/syd': ''   //需要rewrite重写的,
-        }
-        }  
+        // '/apis': {
+        // target: '**********',  // 接口域名
+        // changeOrigin: false,  //是否跨域
+        // pathRewrite: {
+        //     '^/apis': '/'   //需要rewrite重写的,
+        // }
+        // }  
     },
 
     // Various Dev Server settings

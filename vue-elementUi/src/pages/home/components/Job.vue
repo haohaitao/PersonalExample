@@ -15,11 +15,11 @@
     <el-menu-item index="/recruit">我要招人</el-menu-item>
     <el-menu-item index="/job">我要求职</el-menu-item>
   </el-menu>
-          <h1>我要卖车页面</h1>
+      <h1>我要求职页面</h1>
   <el-table
     :data="arr"
     border
-    style="width: 61%;margin: 0 auto;"
+    style="width: 43%;margin: 0 auto;"
     v-loading="loading"
     element-loading-text="拼命加载中"
     element-loading-spinner="el-icon-loading"
@@ -27,8 +27,13 @@
     >
     <el-table-column fixed label="用户" width="100" prop="thum">
     <template slot-scope="scope">
-        <img :src="scope.row.thum" class="head_pic"/>
+        <img :src="scope.row.head_photo" class="head_pic"/>
     </template>
+    </el-table-column>
+    <el-table-column
+      prop="post"
+      label="求职者"
+      width="150">
     </el-table-column>
     <el-table-column
       prop="create_time"
@@ -36,29 +41,9 @@
       width="150">
     </el-table-column>
     <el-table-column
-      prop="machine_name"
-      label="求购"
+      prop="address"
+      label="工作地点"
       width="300">
-    </el-table-column>
-    <el-table-column
-      prop="province_name"
-      label="省份"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      prop="city_name"
-      label="城市"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      prop="area_name"
-      label="区域"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      prop="phone"
-      label="电话"
-      width="150">
     </el-table-column>
     <el-table-column
       fixed="right"
@@ -74,19 +59,16 @@
           <el-table :data="dialogData">
             <el-table-column fixed label="用户" width="100" prop="thum">
                 <template slot-scope="scope">
-               <img :src="scope.row.thum" class="head_pic"/>
+               <img :src="scope.row.head_photo" class="head_pic"/>
                 </template>
            </el-table-column>
           <el-table-column property="create_time" label="日期" width="150">
             
           </el-table-column>
-          <el-table-column property="machine_name" label="求购" width="200">
-            
-          </el-table-column>
           <el-table-column property="phone" label="电话">
             
           </el-table-column>
-          <el-table-column property="price" label="价格（万元）">
+          <el-table-column property="price" label="期望薪资">
             
           </el-table-column>
           </el-table>
@@ -127,7 +109,7 @@
   return Y + M + D + h + m;
 }
   export default {
-    name: "SellCars",
+    name: "Job",
     components: {
       SellsFooter
     }, 
@@ -176,7 +158,7 @@
 
       getHomeInfo() {
         //请求地址，带上参数 pagnum strt
-        this.$axios.post("/api/v1/AppSellCar/car_search",{
+        this.$axios.post("/api/v1/AppRecruit/work",{
           'pagenum': this.pageSize,   //每页多少条数据
           'start': this.cur_page     //页码
         }).then(this.getHomeInfoSucc).catch((error)=>{
@@ -185,10 +167,11 @@
       },
 
       getHomeInfoSucc(res) {    //拿到数据
+        console.log(res)
         if (res.data.cscode==0) {  //为0代表成功
-          this.totalCount = res.data.data.count    //把一共多少条的数据赋值给分页的totalCount
+          this.totalCount = res.data.count    //把一共多少条的数据赋值给分页的totalCount
           this.loading = false   //停止加载动画
-          this.tableData = res.data.data.list  //赋值给tableDta
+          this.tableData = res.data.data  //赋值给tableDta
           this.arr = []  //清空上次的数据
           for(let i=0; i<this.tableData.length; i++){ //循环数组长度
             var times = timestampToTime(this.tableData[i].create_time);  //拿到时间，解析时间戳timestampToTime()方法
@@ -196,6 +179,12 @@
             if(this.tableData[i].city_name == null || this.tableData[i].area_name == null){  //处理特殊情况，澳门，香港之类的只有省级
               this.tableData[i].city_name = '无'
               this.tableData[i].area_name = '无'
+            }
+            if(this.tableData[i].price == "-999") {
+              this.tableData[i].price = "面议"
+            }
+            else{
+              this.tableData[i].price += '元'
             }
             this.arr.push(this.tableData[i])  //将最后数据存到arr数组
           }
