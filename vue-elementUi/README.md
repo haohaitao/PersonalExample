@@ -2,6 +2,8 @@
 
 > 一个很厉害的项目
 
+## 效果图
+![效果预览](static/gifTest.gif)
 ## Build Setup
 
 ``` bash
