@@ -25,8 +25,10 @@
       http://localhost:8080
 + card.php
 > 解析接口返回的json数据并展示
-+ 复盘计划
++ RepeatPlan
 > 白天学习，晚上复盘
 + tool
 > 放一些常用工具
++ SuspendedBall
+> 一个h5悬浮球功能
 - - -
